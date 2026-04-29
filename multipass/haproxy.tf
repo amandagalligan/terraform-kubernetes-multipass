@@ -8,7 +8,7 @@ resource "null_resource" "haproxy" {
     type        = "ssh"
     host        = data.external.haproxy.result.ip
     user        = "root"
-    private_key = file(pathexpand("~/.ssh/id_rsa"))
+    private_key = file("~/.ssh/id_rsa")
   }
 
   provisioner "file" {

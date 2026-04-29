@@ -16,17 +16,17 @@ This lab should standup the following multipass hosts when we select 3 worker no
 ```
 multipass list
 Name                    State             IPv4             Image
-haproxy                 Running           192.168.64.12    Ubuntu 26.04 LTS
-master-0                Running           192.168.64.13    Ubuntu 26.04 LTS
+haproxy                 Running           192.168.64.17    Ubuntu 26.04 LTS
+master-0                Running           192.168.64.18    Ubuntu 26.04 LTS
                                           172.17.0.1
                                           10.244.36.64
-worker-0                Running           192.168.64.16    Ubuntu 26.04 LTS
+worker-0                Running           192.168.64.20    Ubuntu 26.04 LTS
                                           172.17.0.1
                                           10.244.43.0
-worker-1                Running           192.168.64.14    Ubuntu 26.04 LTS
+worker-1                Running           192.168.64.19    Ubuntu 26.04 LTS
                                           172.17.0.1
                                           10.244.226.64
-worker-2                Running           192.168.64.15    Ubuntu 26.04 LTS
+worker-2                Running           192.168.64.21    Ubuntu 26.04 LTS
                                           172.17.0.1
                                           10.244.133.192
 ```

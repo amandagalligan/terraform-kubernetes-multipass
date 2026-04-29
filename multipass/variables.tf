@@ -1,14 +1,44 @@
 variable "disk" {
-  default     = "10G"
+  default     = "15G"
   type        = string
   description = "Disk size assigned to vms"
 }
 variable "mem" {
-  default     = "2G"
+  default     = "4G"
   type        = string
   description = "Memory assigned to vms"
 }
 variable "cpu" {
+  default     = 3
+  type        = number
+  description = "Number of CPU assigned to vms"
+}
+variable "disk_haproxy" {
+  default     = "8G"
+  type        = string
+  description = "Disk size assigned to vms"
+}
+variable "mem_haproxy" {
+  default     = "1G"
+  type        = string
+  description = "Memory assigned to vms"
+}
+variable "cpu_haproxy" {
+  default     = 1
+  type        = number
+  description = "Number of CPU assigned to vms"
+}
+variable "disk_worker" {
+  default     = "20G"
+  type        = string
+  description = "Disk size assigned to vms"
+}
+variable "mem_worker" {
+  default     = "2G"
+  type        = string
+  description = "Memory assigned to vms"
+}
+variable "cpu_worker" {
   default     = 2
   type        = number
   description = "Number of CPU assigned to vms"
@@ -19,12 +49,12 @@ variable "masters" {
   description = "Number of control plane nodes"
 }
 variable "workers" {
-  default     = 3
+  default     = 1
   type        = number
   description = "Number of worker nodes"
 }
 variable "kube_version" {
-  default     = "1.28.2-1.1"
+  default     = "1.34.2-1.1"
   type        = string
   description = "Version of Kubernetes to use"
 }
